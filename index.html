@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CyberShield | Enterprise Threat Intelligence & Awareness</title>
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient Light & Tech Grid -->
+  <div class="cyber-grid"></div>
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="navbar">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>CYBER</span>SHIELD
+      </a>
+
+      <div class="menu-btn" id="menuToggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-item active">Home</a></li>
+        <li><a href="#threats" class="nav-item">Threats</a></li>
+        <li><a href="#tools" class="nav-item">Live Tools</a></li>
+        <li><a href="#tips" class="nav-item">Safety Tips</a></li>
+        <li><a href="#quiz" class="nav-item">Quiz</a></li>
+        <li><a href="#sos" class="btn-sos"><i class="fa-solid fa-phone"></i> Helpline 1930</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="badge-live">
+      <span class="live-dot"></span> RWPD Cyber Defense System Active
+    </div>
+    <h1 class="hero-heading">
+      Stay Safe in the <br>
+      <span class="gradient-text">Digital Battlefield</span>
+    </h1>
+    <p class="hero-subtext">
+      Learn threat detection, analyze suspicious links, audit passwords in real-time, and protect your digital footprint against modern cybercrime.
+    </p>
+    <div class="hero-buttons">
+      <a href="#threats" class="btn btn-red"><i class="fa-solid fa-shield-virus"></i> Explore Threats</a>
+      <a href="#tools" class="btn btn-glass"><i class="fa-solid fa-microchip"></i> Live Tools</a>
+    </div>
+
+    <!-- Live Metrics Grid -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <h3>3.4B+</h3>
+        <p>Phishing Mails Daily</p>
+      </div>
+      <div class="metric-card">
+        <h3>39 Sec</h3>
+        <p>Attack Frequency</p>
+      </div>
+      <div class="metric-card">
+        <h3>82%</h3>
+        <p>Human Errors Involved</p>
+      </div>
+      <div class="metric-card">
+        <h3>99.9%</h3>
+        <p>2FA Success Protection</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Threats Section -->
+  <section id="threats" class="section-container">
+    <div class="section-head">
+      <span class="tag">DEFENSE MATRIX</span>
+      <h2>Common Cyber Threats</h2>
+      <p>Recognize the common attack vectors used by malicious actors.</p>
+    </div>
+
+    <div class="cards-grid">
+      <div class="cyber-card">
+        <span class="risk-badge critical">Critical Risk</span>
+        <div class="card-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
+        <h3>Phishing Scams</h3>
+        <p>Fake emails, deceptive banking SMS, and spoofed login pages created to steal credentials and financial OTPs.</p>
+        <div class="card-footer-tip">
+          <i class="fa-solid fa-circle-check"></i> Always inspect sender domain addresses
+        </div>
+      </div>
+
+      <div class="cyber-card">
+        <span class="risk-badge high">Severe Threat</span>
+        <div class="card-icon"><i class="fa-solid fa-bug"></i></div>
+        <h3>Malware & Trojans</h3>
+        <p>Malicious executable binaries and trojans that silently record keystrokes, lock disks, or exfiltrate private files.</p>
+        <div class="card-footer-tip">
+          <i class="fa-solid fa-circle-check"></i> Avoid pirated software cracks
+        </div>
+      </div>
+
+      <div class="cyber-card">
+        <span class="risk-badge medium">High Vulnerability</span>
+        <div class="card-icon"><i class="fa-solid fa-key"></i></div>
+        <h3>Password Attacks</h3>
+        <p>Brute-force dictionary bots guessing short passwords or leveraging data breach databases for credential reuse.</p>
+        <div class="card-footer-tip">
+          <i class="fa-solid fa-circle-check"></i> Use 14+ character passphrases
+        </div>
+      </div>
+
+      <div class="cyber-card">
+        <span class="risk-badge warning">Network Danger</span>
+        <div class="card-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>Unsafe Portals & MitM</h3>
+        <p>Insecure HTTP connections and deceptive Wi-Fi networks intercepting active web cookies and payment data.</p>
+        <div class="card-footer-tip">
+          <i class="fa-solid fa-circle-check"></i> Check for valid HTTPS certificates
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Live Tools -->
+  <section id="tools" class="section-container tools-bg">
+    <div class="section-head">
+      <span class="tag">REAL-TIME MODULES</span>
+      <h2>Interactive Security Tools</h2>
+      <p>Hands-on security testing utilities built into your browser.</p>
+    </div>
+
+    <div class="tools-grid">
+      <!-- Tool 1: Password Entropy Tester -->
+      <div class="tool-box">
+        <div class="tool-title">
+          <i class="fa-solid fa-lock"></i>
+          <div>
+            <h3>Password Strength Analyzer</h3>
+            <p>Calculates entropy and crack-resistance instantly.</p>
+          </div>
+        </div>
+
+        <div class="input-wrap">
+          <input type="password" id="passInput" placeholder="Enter password to evaluate...">
+          <button id="togglePassBtn" type="button"><i class="fa-solid fa-eye"></i></button>
+        </div>
+
+        <div class="strength-track">
+          <div id="strengthIndicator" class="strength-bar"></div>
+        </div>
+
+        <div class="strength-stats">
+          <span>Verdict: <strong id="strengthStatus">Enter text</strong></span>
+          <span id="crackEstimate">Crack Time: Instant</span>
+        </div>
+      </div>
+
+      <!-- Tool 2: Phishing URL Simulator -->
+      <div class="tool-box">
+        <div class="tool-title">
+          <i class="fa-solid fa-link"></i>
+          <div>
+            <h3>Phishing URL Inspector</h3>
+            <p>Analyzes suspicious web links against bait patterns.</p>
+          </div>
+        </div>
+
+        <div class="input-wrap">
+          <input type="text" id="urlInput" placeholder="e.g. http://secure-login-bonus.com">
+          <button id="inspectBtn" class="btn-check">Scan</button>
+        </div>
+
+        <div id="urlReportBox" class="url-report hidden">
+          <p id="urlProtoResult"></p>
+          <p id="urlPatternResult"></p>
+          <div id="urlFinalVerdict" class="verdict"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety Tips -->
+  <section id="tips" class="section-container">
+    <div class="section-head">
+      <span class="tag">CYBER HYGIENE</span>
+      <h2>Best Security Practices</h2>
+      <p>Follow these essential protocols to safeguard your personal identity.</p>
+    </div>
+
+    <div class="tips-grid">
+      <div class="tip-card">
+        <div class="tip-counter">01</div>
+        <h4>Enable Two-Factor (2FA/MFA)</h4>
+        <p>Switch to hardware keys or app-based authenticator codes (TOTP) instead of standard SMS-based codes.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-counter">02</div>
+        <h4>Zero-Trust Download Rule</h4>
+        <p>Never run untrusted attachments (.exe, .zip, .apk) sent via WhatsApp, Telegram, or unknown emails.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-counter">03</div>
+        <h4>Keep Patch Updates Active</h4>
+        <p>Promptly update your OS, web browsers, and firewall security signatures to patch known zero-day vulnerabilities.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-counter">04</div>
+        <h4>Isolate Public Wi-Fi Networks</h4>
+        <p>Avoid logging into online bank accounts or entering credit card details while connected to open public hotspots.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive 5-Question Quiz -->
+  <section id="quiz" class="section-container">
+    <div class="section-head">
+      <span class="tag">SELF-ASSESSMENT</span>
+      <h2>Cyber Readiness Quiz</h2>
+      <p>Test your defensive instincts against real-world attack scenarios.</p>
+    </div>
+
+    <div class="quiz-box-card">
+      <div class="quiz-top-bar">
+        <div class="progress-line-track">
+          <div id="quizProgressFill" class="progress-line-fill"></div>
+        </div>
+        <div class="quiz-info-row">
+          <span id="questionStep">Question 1 of 5</span>
+          <span id="liveScore">Score: 0</span>
+        </div>
+      </div>
+
+      <!-- Active Quiz View -->
+      <div id="quizActiveView">
+        <h3 id="quizQuestionTitle" class="quiz-title">Loading Question...</h3>
+        <div id="quizOptionsContainer" class="quiz-options-grid"></div>
+      </div>
+
+      <!-- Result View -->
+      <div id="quizResultView" class="quiz-finished hidden">
+        <div class="award-icon"><i class="fa-solid fa-trophy"></i></div>
+        <h3>Assessment Complete!</h3>
+        <p id="quizScoreText" class="result-text"></p>
+        <button id="quizRestartBtn" class="btn btn-red"><i class="fa-solid fa-rotate-left"></i> Restart Assessment</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- National Helpline SOS Banner -->
+  <section id="sos" class="section-container">
+    <div class="sos-banner">
+      <div class="sos-left">
+        <i class="fa-solid fa-triangle-exclamation sos-bell"></i>
+        <div>
+          <h3>Encountered Cyber Financial Fraud?</h3>
+          <p>Immediately report online or dial the National Cyber Crime Helpline.</p> 
+        </div>
+      </div>
+      <a href="https://cybercrime.gov.in" target="_blank" class="btn btn-sos-main">
+        <i class="fa-solid fa-shield-cat"></i> Dial 1930 / Report Online
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 CyberShield Portal | Developed for RWPD Subject</p>
+    <p class="footer-sub">Designed with Pure HTML5, Modern CSS3 & Vanilla JavaScript</p>
+  </footer>
+<!-- Threat Detail Modal Popup -->
+  <div id="threatModal" class="threat-modal-overlay">
+    <div class="threat-modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      <div class="modal-header">
+        <span id="modalRiskBadge" class="modal-badge">Critical Risk</span>
+        <h2 id="modalTitle">Threat Title</h2>
+      </div>
+      <div class="modal-body">
+        <h4><i class="fa-solid fa-triangle-exclamation"></i> Real-World Scenario</h4>
+        <p id="modalScenario">Real-world explanation...</p>
+
+        <h4><i class="fa-solid fa-shield-halved"></i> Key Attack Vector</h4>
+        <p id="modalVector">How attackers exploit this...</p>
+
+        <h4><i class="fa-solid fa-lock"></i> Blue Team Defense Recommendations</h4>
+        <ul id="modalDefenseList">
+          <!-- Dynamic Recommendations -->
+        </ul>
+      </div>
+    </div>
+  </div> 
+  <script src="js/script.js"></script> 
+</body>
+</html> 
