@@ -62,7 +62,6 @@ app.post('/api/quiz-score', async (req, res) => {
     res.status(500).json({ success: false, error: error.message });
   }
 });
-app.get('/(.*)/', (req, res) => {
+app.use((req, res) => {
   res.sendFile(path.join(__dirname, '../index.html'));
 }); 
-
