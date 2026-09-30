@@ -62,7 +62,6 @@ app.post('/api/quiz-score', async (req, res) => {
     res.status(500).json({ success: false, error: error.message });
   }
 });
-
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../index.html'));
 });
@@ -70,3 +69,4 @@ app.get('*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Blue Team SOC Server running at http://localhost:${PORT}`);
 }); 
+
