@@ -59,9 +59,8 @@ app.post('/api/quiz-score', async (req, res) => {
     await record.save();
     res.status(201).json({ success: true, message: 'Score saved to DB', data: record });
   } catch (error) {
-    res.status(500).json({ success: false, error: error.message });
-  }
-});
+    res.sendFile(path.join(__dirname, '../index.html'));
+}); 
 app.get('*', (req, res) => {
  res.sendFile(path.join(__dirname, '../index.html'));     
 app.listen(PORT, () => {
