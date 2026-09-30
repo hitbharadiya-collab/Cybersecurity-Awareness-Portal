@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path'); 
 const app = express();
-const PORT = process.env.PORT || 5000; 
+const PORT = process.env.PORT || 10000; 
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../'))); 
+app.use(express.static(path.join(__dirname, '../')));  
 // MongoDB Cloud Connection (Atlas)
 const MONGO_URI = 'mongodb+srv://hitbharadiya_db_user:Kwwsxnha7FLEeDrv@cluster0.l0guvsc.mongodb.net/cybershield_soc?retryWrites=true&w=majority&appName=Cluster0';
 
