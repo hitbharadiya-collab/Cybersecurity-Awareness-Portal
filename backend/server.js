@@ -59,10 +59,14 @@ app.post('/api/quiz-score', async (req, res) => {
     await record.save();
     res.status(201).json({ success: true, message: 'Score saved to DB', data: record });
   } catch (error) {
-    res.sendFile(path.join(__dirname, '../index.html'));
-}); 
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
 app.get('*', (req, res) => {
- res.sendFile(path.join(__dirname, '../index.html'));     
+  res.sendFile(path.join(__dirname, '../index.html'));
+});
+
 app.listen(PORT, () => {
-  console.log(`🚀 Blue Team SOC Server running at http://localhost:${PORT}`);
+  console.log(`Blue Team SOC Server running at http://localhost:${PORT}`);
 }); 
