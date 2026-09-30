@@ -1,13 +1,13 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+const path = require('path'); 
 const app = express();
 const PORT = 5000;
 
 app.use(cors());
 app.use(express.json());
-
+app.use(express.static(path.join(__dirname, '../'))); 
 // MongoDB Cloud Connection (Atlas)
 const MONGO_URI = 'mongodb+srv://hitbharadiya_db_user:Kwwsxnha7FLEeDrv@cluster0.l0guvsc.mongodb.net/cybershield_soc?retryWrites=true&w=majority&appName=Cluster0';
 
@@ -62,7 +62,9 @@ app.post('/api/quiz-score', async (req, res) => {
     res.status(500).json({ success: false, error: error.message });
   }
 });
-
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../index.html'));
+}); 
 app.listen(PORT, () => {
   console.log(`🚀 Blue Team SOC Server running at http://localhost:${PORT}`);
 }); 
